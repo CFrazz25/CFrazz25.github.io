@@ -22,3 +22,27 @@ h1 {
 h3 {
   font-family: verdana;
 }
+.highlight:hover {
+color: white;
+}
+a {
+  color: blue;
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+}
+#stickout {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 400px) {
+  #stickout {
+    text-transform: lowercase;
+    color: white;
+    font-size: 15px;
+  }
+  h1 {
+    text-align: left;
+  }
+}
