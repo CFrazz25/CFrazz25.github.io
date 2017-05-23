@@ -1,0 +1,20 @@
+<%= form_for :contact, url: contacts_path do |f| %>
+  
+  <%= f.text_field :name, placeholder: "Name" %><br>
+  
+  <%= f.text_field :number, placeholder: "Phone Number" %><br>
+  
+  <%= f.email_field :email, placeholder: "Email" %><br>
+  
+   <%= f.text_field :message, placeholder: "Message" %><br>
+  <%= f.submit "Submit" %>
+  <% end %>
+
+  <% if @errors %>
+   <div class="error_container">
+       <p><strong> There is a problem</strong></p>
+       <% @errors.each do |error| %>
+         <p><%= error %></p>
+       <% end %>
+   </div>
+<% end %>

@@ -1,0 +1,19 @@
+<div class="container">
+  <center><h2>Login</h2>
+
+  <% if @errors %>
+     <div class="error_container">
+         <p><strong> There is a problem</strong></p>
+         <% @errors.each do |error| %>
+           <p><%= error %></p>
+         <% end %>
+     </div>
+  <% end %>
+
+    <%= form_for :admin_session, url: {action: "create"} do |f| %>
+       <%= f.email_field :email, placeholder: "Email" %><br>
+      <%= f.password_field :password, placeholder: "Password" %><br>
+      <%= f.submit "Login" %>
+    <% end %>
+    </center>
+</div>

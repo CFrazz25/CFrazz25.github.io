@@ -1,0 +1,88 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #000;
+    background-image: url("site-background.jpg");
+    background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+    padding: 20px 0;
+    position: relative;
+}
+
+.button-top {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: rgba(255,255,255,.25);
+    color: #ccc;
+    text-decoration: none !important;
+}
+.button-top:hover {
+    background-color: lime;
+    color: #000;
+}
+
+#logo {
+    display: inline-block;
+    background-image: url("onepapparel-logo-onep-white.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    overflow: hidden;
+    text-indent: -300px;
+    width: 250px;
+}
+
+#logo:hover {
+    background-image: url("onepapparel-logo-onep-lime.png");
+}
+
+.navbar.navbar-inverse {
+    background-image: url("site-background.jpg");
+    background-position: top center;
+}
+
+#intro-container,
+#custom-team-apparel-container,
+#screen-printing-embroidery-container
+{
+    background-color: #fff;
+    text-align: center;
+}
+
+#custom-team-apparel-container,
+#screen-printing-embroidery-container
+{
+    border-top: 5px solid #000;
+}
+
+
+.footer {
+    color: #fff;
+    text-align: center;
+}
+
+.footer .logo-container {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .pull-md-right {
+        float: right !important;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .footer {
+        text-align: inherit;
+    }
+    .logo-container {
+        padding: 0;
+    }
+}
